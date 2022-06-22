@@ -77,7 +77,12 @@ opacity: 0;
 .header .mega-manu .image img{
   max-width: 100%;
 }
-
+@media (max-width:992px){
+ 
+  .header .mega-manu .image img{
+    display: none;
+  }
+}
 .header .mega-manu .links{
 min-width: 240px;
 flex: 1;
@@ -121,6 +126,11 @@ align-items: center;
 flex-wrap: wrap;
 position: relative;
 }
+@media (max-width:427px){
+  .header .container{
+    justify-content: center;
+  }
+}
 .header .logo{
   font-size: 1.5rem;
   color: var(--main-color);
@@ -130,15 +140,16 @@ position: relative;
   justify-content: center;
   align-items: center;
 }
-@media (max-width:767px){
-  .header .logo {
-    padding-left: 160px;
-  }
-}
 .header .min-nav{
   display: flex;
   font-size: 1.2rem;
 }
+@media (max-width:477px){
+  .header .min-nav{
+    font-size: 1rem;
+  }
+}
+
 .header .min-nav >li:hover .mega-manu {
 opacity: 1;
 z-index: 100;
@@ -155,7 +166,19 @@ transition: var(--main-transition);
   padding: 0px 30px;
   transition:var(--main-transition);
   overflow: hidden;
-
+}
+@media (max-width:443px){
+  .header .min-nav >li >a {
+    padding: 0px 10px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width:348px){
+  .header .min-nav >li >a {
+    padding: 0px 5px;
+    font-size: 1.1rem;
+  }
 }
 .header .min-nav >li >a::before{
   content: "";
@@ -191,11 +214,27 @@ z-index: -1;
 transform: skewY(-10deg);
 transform-origin: top left;
 }
+@media(max-width:427px){
+  .landing::before{
+left: 0;
+top:-200px;
+width: 100%;
+height: 100%;
+transform: skewY(-50deg);
+transform-origin: top left;
+  }
+}
 .landing .container{
 min-height: calc(100vh - 73px);
 display: flex;
 align-items: center;
 padding-bottom: 120px;
+}
+@media(max-width:975px){
+  .landing .container{
+    padding:100px 1px;
+    display: block;
+  }
 }
 .landing .text{
 flex: 1;
@@ -223,6 +262,7 @@ color: #666;
   .landing .text p{
     text-align: center;
     font-size: 18px;
+  margin-bottom: 100px;
   }
 }
 .landing .image img{
@@ -246,6 +286,11 @@ transition: var(--main-transition);
 }
 .landing .go-down:hover{
 color: var(--main-color-alt);
+}
+@media(max-width:427px){
+  .landing .go-down{
+    bottom: 300px;
+  }
 }
 /*end landing*/
 /*start animation */
