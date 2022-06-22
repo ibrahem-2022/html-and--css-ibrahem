@@ -77,12 +77,7 @@ opacity: 0;
 .header .mega-manu .image img{
   max-width: 100%;
 }
-@media (max-width:992px){
- 
-  .header .mega-manu .image img{
-    display: none;
-  }
-}
+
 .header .mega-manu .links{
 min-width: 240px;
 flex: 1;
@@ -236,11 +231,7 @@ color: #666;
   max-width: 100%;
   animation: up-and-down 5s linear infinite;
 }
-@media(max-width:991px){
-  .landing .image{
-    display: none;
-  }
-}
+
 .landing .go-down{
 font-size: 30px;
 color: var(--main-color);
